@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="as">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="উৎপল গগৈ — শিক্ষাৰ্থী, লেখক, সাহিত্য-অনুৰাগী আৰু সৃষ্টিশীল চিন্তক। উপন্যাস, সাহিত্য-চিন্তা আৰু জীৱনবোধ।">
+<meta name="theme-color" content="#fafaf7">
+<title>উৎপল গগৈ | সাহিত্য, অনুভৱ আৰু জীৱনবোধ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#202820;--muted:#626e64;--paper:#fafaf7;--soft:#edf1e9;--line:#dce2d9;--green:#294535;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:82px}
+body{font-family:"Noto Serif Bengali",serif;background:var(--paper);color:var(--ink);line-height:1.9}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1100px,91%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(250,250,247,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font-size:1.3rem;font-weight:700;line-height:1.4}.brand small{display:block;color:var(--muted);font-size:.68rem;font-weight:400}
+.links{display:flex;align-items:center;gap:21px;font-size:.88rem}.links a:hover{color:#688168}
+.menu{display:none;border:1px solid var(--line);background:transparent;border-radius:8px;padding:5px 11px;font-size:1.3rem;color:var(--ink)}
+.hero{min-height:405px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(250,250,245,.97),rgba(250,250,245,.84) 55%,rgba(250,250,245,.2)),url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1800&q=85") center/cover}
+.hero-inner{padding:68px 0;max-width:750px}.eyebrow{color:var(--muted);font-size:.78rem;letter-spacing:.07em;margin-bottom:12px}
+h1{font-size:clamp(2.3rem,6vw,4.5rem);line-height:1.35;margin-bottom:18px}h1 span{color:#617963}
+.lead{font-size:1.05rem;max-width:650px;color:#4f5b51;margin-bottom:24px}
+.button{display:inline-block;background:var(--green);color:white;border:1px solid var(--green);padding:10px 19px;border-radius:28px;font-size:.9rem;transition:.2s}.button:hover{transform:translateY(-2px);background:#1c3023}
+.button.outline{background:transparent;color:var(--ink);margin-left:8px}
+section{padding:66px 0}.soft{background:var(--soft)}
+.section-head{margin-bottom:27px}.section-head h2{font-size:clamp(1.65rem,4vw,2.4rem);line-height:1.5}.section-head p{color:var(--muted);max-width:850px;margin-top:8px}
+.about-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:48px;align-items:center}
+.photo-area{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:320px;background:linear-gradient(135deg,#e3e9df,#f2f0e8);border-radius:5px;padding:24px}
+.photo-frame{width:225px;height:225px;border-radius:50%;border:7px solid white;outline:1px solid #cbd5c8;overflow:hidden;background:#dce3d9;display:flex;align-items:center;justify-content:center;text-align:center;box-shadow:0 12px 30px #243b2c20}
+.photo-frame img{width:100%;height:100%;object-fit:cover;display:block}
+.photo-placeholder{padding:18px;color:#536454;font-size:.88rem}
+.photo-note{font-size:.75rem;color:var(--muted);text-align:center;margin-top:14px}
+.prose p{margin-bottom:15px;color:#4f5a51}
+.pills{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}.pill{font-size:.8rem;border:1px solid var(--line);padding:4px 12px;border-radius:25px;color:#536253}
+.quote{background:#24372b;color:white;text-align:center;border-radius:5px;padding:36px 24px}.quote .mark{font-size:3rem;line-height:1;color:#cbd7ca}.quote blockquote{font-size:clamp(1.1rem,2.7vw,1.65rem);max-width:850px;margin:8px auto 14px;line-height:1.9}.quote p{color:#d4ded4;font-size:.9rem}
+.book-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.book{display:flex;gap:20px;padding:20px;background:white;border:1px solid var(--line);border-radius:5px}
+.cover{width:120px;min-width:120px;min-height:175px;background:linear-gradient(155deg,#bd8c53,#5d5943 65%,#253a30);color:white;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;padding:13px 8px;box-shadow:4px 5px 0 #dfe4dc}.cover strong{font-size:1.1rem;line-height:1.7}.cover small{font-size:.68rem}
+.book h3{font-size:1.15rem;margin-bottom:8px}.book p{font-size:.9rem;color:var(--muted);margin-bottom:12px}
+.small-link{font-size:.87rem;font-weight:600;color:var(--green);border-bottom:1px solid #9eae9e;padding-bottom:3px}
+.note{font-size:.82rem;color:var(--muted);margin-top:18px}
+.two-col{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.text-card{background:white;border:1px solid var(--line);padding:23px;border-radius:4px;margin-bottom:18px}
+.text-card h3{font-size:1.15rem;margin-bottom:10px}.text-card p{color:#566157;margin-bottom:12px}
+.quote-card{background:white;border:1px solid var(--line);padding:22px;border-radius:4px}.quote-card h3{font-size:1.02rem;margin-bottom:8px}.quote-card p{color:#566157}
+.life-box{padding:26px;border-left:3px solid #6d876c;background:#f1f3ee;color:#4f5a51}
+.contact-row{display:flex;justify-content:space-between;align-items:center;gap:25px}.contact-row p{color:var(--muted);max-width:680px;margin-top:8px}
+footer{background:#17271e;color:#f7f8f3;padding:30px 0}.foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.foot p,.foot small{color:#cbd4cc;font-size:.82rem}.footlinks{display:flex;gap:16px;flex-wrap:wrap;font-size:.85rem}
+@media(max-width:850px){.about-grid{gap:28px}.book-grid{grid-template-columns:1fr}.photo-area{min-height:270px}}
+@media(max-width:620px){.nav{min-height:67px}.menu{display:block}.links{display:none;position:absolute;top:67px;left:0;right:0;background:var(--paper);padding:17px 5%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:13px}.links.open{display:flex}.hero{min-height:430px;background-position:center}.hero-inner{padding:55px 0}.lead{font-size:.98rem}.button.outline{margin:10px 0 0}.about-grid{grid-template-columns:1fr}.photo-area{min-height:260px}.photo-frame{width:200px;height:200px}.two-col{grid-template-columns:1fr}.book{gap:15px;padding:15px}.cover{width:105px;min-width:105px;min-height:160px}.contact-row{align-items:flex-start;flex-direction:column}section{padding:52px 0}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#home">উৎপল গগৈ<small>লেখা · অনুভৱ · জীৱন</small></a>
+  <button class="menu" id="menu" aria-label="মেনু খোলক" aria-expanded="false">☰</button>
+  <nav class="links" id="links"><a href="#home">Home</a><a href="#about">পৰিচয়</a><a href="#life">জীৱন-কথা</a><a href="#literature">সাহিত্য-চিন্তা</a><a href="#novels">উপন্যাস</a><a href="#quotes">উদ্ধৃতি</a><a href="#contact">যোগাযোগ</a></nav>
+ </div>
+</header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-inner">
+ <p class="eyebrow">শিক্ষাৰ্থী · লেখক · সাহিত্য-অনুৰাগী · সৃষ্টিশীল চিন্তক</p>
+ <h1>শব্দৰ মাজত<br><span>জীৱনৰ এখন সৰু ঠিকনা।</span></h1>
+ <p class="lead">মই উৎপল গগৈ। সাহিত্য, অনুভৱ, প্ৰেম, সপোন আৰু জীৱন-সংগ্ৰামৰ নানা দিশক শব্দৰ ৰূপ দিয়াৰ এক অব্যাহত প্ৰয়াসত ব্ৰতী। মোৰ সৃষ্টিৰ পৃথিৱীলৈ আপোনাক আন্তৰিক আদৰণি।</p>
+ <a class="button" href="#novels">মোৰ উপন্যাস পঢ়ক →</a><a class="button outline" href="#about">মোৰ বিষয়ে জানক</a>
+</div></section>
+
+<section id="about"><div class="wrap about-grid">
+ <div><div class="photo-area">
+  <div class="photo-frame" id="photoFrame"><img src="file_00000000f64482119bed6196179e519f.png" alt="উৎপল গগৈৰ ফটো"></div>
+  <p class="photo-note">ফটোখন বৃত্তাকাৰ ৰূপত দেখুওৱা হ’ব। ৱেবছাইটৰ HTML ফাইলৰ সৈতে একে ফ’ল্ডাৰত ফটো ফাইলটোও ৰাখিবা।</p>
+ </div></div>
+ <div class="prose"><p class="eyebrow">১ · মোৰ পৰিচয়</p><h2 style="font-size:clamp(1.7rem,4vw,2.35rem);margin-bottom:15px">উৎপল গগৈ</h2>
+  <p><strong>শিক্ষাৰ্থী | লেখক | সাহিত্য-অনুৰাগী | সৃষ্টিশীল চিন্তক</strong></p>
+  <p>মই উৎপল গগৈ। অধ্যয়নৰ সমান্তৰালভাৱে সাহিত্যৰ বিশাল জগতখনৰ সৈতে আত্মিক সম্পৰ্ক গঢ়ি তোলাৰ প্ৰয়াসত ব্ৰতী এগৰাকী সাধাৰণ শিক্ষাৰ্থী। মোৰ বাবে সাহিত্য কেৱল শব্দৰ সুবিন্যস্ত সমাহাৰ নহয়; ই মানুহৰ অন্তৰ্জগত, অনুভৱৰ গভীৰতা, জীৱনৰ দ্বন্দ্ব আৰু সময়ৰ বুকুত সঞ্চিত অলেখ অনুচ্চাৰিত কাহিনীৰ এক সাৰ্থক অভিব্যক্তি।</p>
+  <p>মানুহৰ জীৱন, প্ৰেমৰ জটিলতা, সম্পৰ্কৰ অন্তৰালত লুকাই থকা অৱ্যক্ত অনুভূতি, সপোনৰ অন্বেষণ আৰু সংগ্ৰামৰ মাজেৰে আত্মপ্ৰতিষ্ঠাৰ আকাংক্ষাই মোৰ চিন্তাৰ জগতখনক বিশেষভাৱে প্ৰভাৱিত কৰে। মই বিশ্বাস কৰোঁ, প্ৰতিজন মানুহৰ জীৱনেই একোখন উপন্যাস; কোনোবাখন আনন্দৰ আখৰেৰে লিখা, কোনোবাখন বেদনাৰ অশ্ৰুৰে সিক্ত, আৰু কোনোবাখন এতিয়াও অপূৰ্ণ সপোনৰ অপেক্ষাত।</p>
+  <p>মোৰ লেখনীৰ জৰিয়তে মানুহৰ মনৰ গভীৰতম অনুভূতিসমূহক ভাষা দিবলৈ, জীৱনৰ নিষ্ঠুৰ বাস্তৱতাৰ মাজতো আশাৰ সম্ভাৱনা বিচাৰি উলিয়াবলৈ আৰু পাঠকৰ হৃদয়ত চিন্তাৰ এক ক্ষুদ্ৰ বীজ ৰোপণ কৰিবলৈ ইচ্ছা কৰোঁ। মই নিজকে কোনো পৰিপূৰ্ণ সৃষ্টিকৰ্তা বুলি নাভাবোঁ; বৰং প্ৰতিটো নতুন অভিজ্ঞতা, প্ৰতিটো ভুল আৰু প্ৰতিটো অনুভৱৰ মাজেৰে নিজকে নতুনকৈ আৱিষ্কাৰ কৰিবলৈ বিচৰা এজন আজীৱন শিক্ষাৰ্থী বুলি গণ্য কৰোঁ।</p>
+  <p>মোৰ বিশ্বাস, সাহিত্যৰ প্ৰকৃত সাৰ্থকতা কেৱল প্ৰশংসা লাভ কৰাত নহয়, বৰং পাঠকৰ হৃদয়ত এনে এক অনুভৱৰ জন্ম দিয়াত, যি অনুভৱে তেওঁক নিজৰ জীৱন, সম্পৰ্ক আৰু সমাজখনক নতুন দৃষ্টিৰে চাবলৈ শিকায়। মোৰ যাত্ৰা এতিয়াও অব্যাহত। শব্দৰ মাজেৰে নিজকে বিচাৰি পোৱা আৰু জীৱনৰ মাজেৰে সাহিত্যক বুজি পোৱাৰ এই প্ৰচেষ্টাই মোৰ সৃষ্টিশীল অস্তিত্বৰ মূল আধাৰ।</p>
+  <div class="pills"><span class="pill">অসমীয়া সাহিত্য</span><span class="pill">উপন্যাস</span><span class="pill">সৃষ্টিশীল লেখা</span><span class="pill">আজীৱন শিক্ষাৰ্থী</span></div>
+ </div>
+</div></section>
+
+<section class="soft" id="life"><div class="wrap">
+ <div class="section-head"><p class="eyebrow">২ · মোৰ জীৱন-কথা</p><h2>এখন অপূৰ্ণ পাণ্ডুলিপিৰ দৰে জীৱন</h2></div>
+ <div class="prose">
+  <p>জীৱনক মই কোনো পূৰ্বনিৰ্ধাৰিত কাহিনীৰ সমাপ্ত অধ্যায় হিচাপে নাচাওঁ; বৰং প্ৰতিদিনে নতুন অৰ্থ লাভ কৰা এখন অপূৰ্ণ পাণ্ডুলিপি হিচাপে অনুভৱ কৰোঁ। সময়ে মোক শিকাইছে যে মানুহৰ পৰিচয় কেৱল তেওঁৰ নাম, পৰিচয়পত্ৰ অথবা সামাজিক অৱস্থানত সীমাবদ্ধ নাথাকে; তেওঁৰ চিন্তা, কৰ্ম, মূল্যবোধ আৰু আনৰ জীৱনত এৰি যোৱা প্ৰভাৱৰ মাজতেই তেওঁৰ প্ৰকৃত সত্তা প্ৰতিফলিত হয়।</p>
+  <p>মোৰো আছে কিছুমান সপোন, কিছুমান নীৰৱ আকাংক্ষা আৰু নিজকে প্ৰমাণ কৰাৰ একান্ত হেঁপাহ। সকলো পথ যে মসৃণ হ’ব, সকলো প্ৰচেষ্টাই যে তাৎক্ষণিক সফলতা কঢ়িয়াই আনিব, তেনে কোনো ভ্ৰান্ত ধাৰণা মই পোষণ নকৰোঁ। বৰং ব্যৰ্থতাৰ পৰা শিক্ষা গ্ৰহণ কৰি, প্ৰতিকূলতাৰ সন্মুখীন হৈ আৰু নিজৰ সীমাবদ্ধতাক অতিক্ৰম কৰি আগুৱাই যোৱাটোকেই জীৱনৰ প্ৰকৃত সাধনা বুলি গণ্য কৰোঁ।</p>
+  <p>মই জানো, সময়ৰ সৈতে মানুহ সলনি হয়, সম্পৰ্কৰ ৰূপান্তৰ ঘটে আৰু বহুতো আকাংক্ষা বাস্তৱতাৰ সন্মুখত নতুন অৰ্থ লাভ কৰে। তথাপি মানুহৰ অন্তৰত যদি সততা, সংবেদনশীলতা আৰু সৃষ্টিশীলতাৰ প্ৰতি নিষ্ঠা অটুট থাকে, তেন্তে জীৱনৰ কঠিনতম অধ্যায়তো নতুন আৰম্ভণিৰ সম্ভাৱনা অৱশিষ্ট থাকে।</p>
+  <p>মোৰ জীৱন-কথা এতিয়াও লিখি থকা হৈছে। ইয়াৰ প্ৰতিটো বাক্য অভিজ্ঞতাৰে পৰিপক্ব হওক, প্ৰতিটো অধ্যায় কৰ্মেৰে সমৃদ্ধ হওক আৰু শেষৰ পৃষ্ঠাখনত মোৰ নামতকৈও অধিক মূল্যৱান হৈ ৰওক মোৰ কৰ্মৰ চিনাকি—এয়াই মোৰ আন্তৰিক অভিলাষ।</p>
+ </div>
+</div></section>
+
+<section id="literature"><div class="wrap">
+ <div class="section-head"><p class="eyebrow">৩ · মোৰ সাহিত্য-ধাৰণা</p><h2>সাহিত্য — জীৱন-সত্যৰ অনুসন্ধান</h2></div>
+ <div class="prose">
+  <p>মোৰ দৃষ্টিত সাহিত্য হৈছে মানৱ-অভিজ্ঞতাৰ নান্দনিক ৰূপান্তৰ আৰু জীৱন-সত্যৰ অনুসন্ধান। ই কেৱল কল্পনাৰ আশ্ৰয়ত নিৰ্মিত কোনো মনোৰঞ্জনমূলক জগত নহয়; বৰং সমাজ, সময়, মানুহৰ মনস্তত্ত্ব আৰু অস্তিত্বৰ জটিল প্ৰশ্নসমূহৰ সৈতে কৰা এক নিৰন্তৰ বৌদ্ধিক তথা আৱেগিক সংলাপ।</p>
+  <p>এগৰাকী লেখকৰ দায়িত্ব কেৱল সুন্দৰ বাক্য নিৰ্মাণ কৰাতেই সমাপ্ত নহয়। তেওঁৰ কলমত সমাজৰ উপেক্ষিত কণ্ঠই প্ৰকাশৰ পথ পাব লাগে, মানুহৰ অৱদমিত অনুভূতিয়ে ভাষা লাভ কৰিব লাগে আৰু জীৱনৰ সাধাৰণ ঘটনাবোৰেও অসাধাৰণ তাৎপৰ্য লাভ কৰিব লাগে। শব্দৰ সৌন্দৰ্য তেতিয়াহে সাৰ্থক হয়, যেতিয়া তাৰ অন্তৰালত সত্যৰ অনুসন্ধান, মানৱীয় সহমৰ্মিতা আৰু চিন্তাৰ গভীৰতা বিদ্যমান থাকে।</p>
+  <p>মই সাহিত্যক মানুহৰ অন্তৰ্জগত আৰু বাহ্যিক বাস্তৱতাৰ মাজৰ এখন সেতু বুলি ভাবোঁ। প্ৰেম, বিচ্ছেদ, আশা, হতাশা, সামাজিক বৈষম্য, আত্মসংঘাত আৰু আত্মপ্ৰতিষ্ঠাৰ আকাংক্ষা—এই সকলোবোৰেই সাহিত্যৰ উপাদান। জীৱনৰ কোনো অনুভৱেই তুচ্ছ নহয়; উপযুক্ত প্ৰকাশভংগী লাভ কৰিলে সাধাৰণতম অভিজ্ঞতাও কালজয়ী তাৎপৰ্যৰ অধিকাৰী হ’ব পাৰে।</p>
+  <div class="quote"><div class="mark">“</div><blockquote>মোৰ বাবে লেখনীৰ অৰ্থ হৈছে জীৱনক কেৱল বৰ্ণনা কৰা নহয়, জীৱনৰ অন্তৰালত লুকাই থকা অৰ্থসমূহক আৱিষ্কাৰ কৰা।</blockquote><p>— উৎপল গগৈ</p></div>
+ </div>
+</div></section>
+
+<section class="soft" id="novels"><div class="wrap">
+ <div class="section-head"><p class="eyebrow">৪ · মোৰ সাহিত্যিক সৃষ্টি</p><h2>উপন্যাস আৰু লেখা</h2><p>মোৰ উপন্যাস পঢ়িবলৈ তলৰ বুটামত টেপ কৰা। প্ৰকাশিত উপন্যাসৰ লিংক সংযোগ কৰা হৈছে।</p></div>
+ <div class="book-grid">
+  <article class="book">
+   <div class="cover"><small>এখন হৃদয়স্পৰ্শী উপন্যাস</small><strong>অপূৰণীয়<br>ঠিকনা</strong><small>উৎপল গগৈ</small></div>
+   <div><h3>অপূৰণীয় ঠিকনা</h3><p>এখন হৃদয়স্পৰ্শী প্ৰেম, সপোন আৰু জীৱন-সংগ্ৰামৰ উপন্যাস। অনুৰাধা আৰু অনুৰাগৰ জীৱনযাত্ৰাৰ মাজেৰে প্ৰেম, পাৰিবাৰিক সমস্যা, অপেক্ষা আৰু সপোন পূৰণৰ প্ৰচেষ্টা প্ৰকাশ কৰা হৈছে।</p><a class="small-link" href="https://publuu.com/flip-book/link/2199358" target="_blank" rel="noopener noreferrer">উপন্যাসখন পঢ়ক →</a></div>
+  </article>
+  <article class="book">
+   <div class="cover" style="background:linear-gradient(155deg,#879a77,#49634c 65%,#26382d)"><small>ভৱিষ্যতৰ সৃষ্টি</small><strong>নতুন<br>কাহিনী</strong><small>উৎপল গগৈ</small></div>
+   <div><h3>পৰৱৰ্তী সৃষ্টি</h3><p>আগন্তুক উপন্যাস, কবিতা আৰু অন্যান্য লেখা প্ৰকাশ পালে এই স্থানত সেইবোৰৰ পৰিচয় আৰু পঢ়াৰ লিংক যোগ কৰা হ’ব।</p><a class="small-link" href="#contact">লেখকৰ সৈতে যোগাযোগ →</a></div>
+  </article>
+ </div>
+</div></section>
+
+<section id="quotes"><div class="wrap">
+ <div class="section-head"><p class="eyebrow">৫ · প্ৰেম আৰু জীৱন</p><h2>মোৰ চিন্তাৰ কেইটামান বাক্য</h2><p>তলৰ উক্তিসমূহ এই ৱেবছাইটৰ বাবে সংগৃহীত মৌলিক সাহিত্যিক প্ৰকাশ।</p></div>
+ <div class="two-col">
+  <article class="quote-card"><h3>প্ৰেমৰ প্ৰকৃত স্বৰূপ</h3><p>“প্ৰেমৰ সাৰ্থকতা কাৰোবাক নিজৰ কৰি পোৱাত নহয়, বৰং তেওঁৰ স্বকীয়তাক অক্ষুণ্ণ ৰাখিও তেওঁৰ জীৱনৰ এক বিশ্বাসযোগ্য অংশ হৈ থাকিব পৰাতহে নিহিত।”</p></article>
+  <article class="quote-card"><h3>প্ৰেম আৰু সময়</h3><p>“সময়ে প্ৰেমৰ পৰীক্ষা লয় দূৰত্বৰ সৃষ্টি কৰি নহয়, বৰং পৰিৱৰ্তিত পৰিস্থিতিৰ মাজতো দুটা হৃদয়ে পৰস্পৰৰ প্ৰতি কিমান সন্মান, আস্থা আৰু দায়বদ্ধতা অক্ষুণ্ণ ৰাখিব পাৰে, তাৰ জৰিয়তে।”</p></article>
+  <article class="quote-card"><h3>প্ৰেম আৰু অপূৰ্ণতা</h3><p>“কিছুমান সম্পৰ্কৰ পৰিণতি মিলনত নিৰ্ধাৰিত নহয়; কোনো কোনো সম্পৰ্কই মানুহক নিজৰ অন্তৰ্জগতৰ সৈতে পৰিচিত কৰাই, জীৱনৰ প্ৰতি দৃষ্টিভংগী সলনি কৰি আৰু স্মৃতিৰ মাজত এক অনিৰ্বচনীয় অধ্যায় হৈ অধিক গভীৰ অৰ্থ লাভ কৰে।”</p></article>
+  <article class="quote-card"><h3>জীৱন আৰু সংগ্ৰাম</h3><p>“জীৱন কোনো সহজ সমীকৰণ নহয়, যাৰ প্ৰতিটো সমস্যাৰ সমাধান পূৰ্বনিৰ্ধাৰিত; ই এনে এক নিৰন্তৰ সাধনা, য’ত মানুহে নিজৰ ভুলৰ পৰা জ্ঞান, প্ৰতিকূলতাৰ পৰা সাহস আৰু অভিজ্ঞতাৰ পৰা প্ৰজ্ঞা আহৰণ কৰে।”</p></article>
+  <article class="quote-card"><h3>জীৱন আৰু আত্মপৰিচয়</h3><p>“মানুহৰ প্ৰকৃত উচ্চতা তেওঁৰ সাফল্যৰ পৰিমাণে নিৰ্ধাৰণ নকৰে; বৰং সাফল্যৰ শিখৰত উপনীত হৈও তেওঁ নিজৰ মানৱীয়তা কিমান অক্ষুণ্ণ ৰাখিব পাৰিছে, তাৰ মাজতেই তেওঁৰ চৰিত্ৰৰ প্ৰকৃত মহত্ত্ব প্ৰকাশ পায়।”</p></article>
+  <article class="quote-card"><h3>জীৱন আৰু সময়</h3><p>“সময়ৰ আটাইতকৈ গভীৰ শিক্ষা এইটোৱেই যে সকলো হেৰুওৱা বস্তু পুনৰ লাভ কৰিব নোৱাৰি, সকলো প্ৰশ্নৰ উত্তৰ তাৎক্ষণিকভাৱে নাপাব পাৰি; তথাপি প্ৰতিটো অভিজ্ঞতাই মানুহক নিজৰ অস্তিত্বৰ বিষয়ে নতুনকৈ চিন্তা কৰিবলৈ বাধ্য কৰে।”</p></article>
+  <article class="quote-card"><h3>সপোন আৰু বাস্তৱতা</h3><p>“সপোন দেখা সহজ, কিন্তু সেই সপোনক বাস্তৱৰ ভূমিত প্ৰতিষ্ঠা কৰিবলৈ আত্মবিশ্বাসৰ লগতে অনুশাসন, ধৈৰ্য আৰু নিৰন্তৰ কৰ্মনিষ্ঠাৰ প্ৰয়োজন; কিয়নো আকাংক্ষাই পথৰ দিশ দেখুৱায়, কিন্তু কৰ্মইহে সেই পথ অতিক্ৰম কৰিবলৈ সক্ষম কৰে।”</p></article>
+  <article class="quote-card"><h3>কলমৰ শক্তি</h3><p>“কলমৰ প্ৰকৃত শক্তি মানুহক বিস্মিত কৰা শব্দৰ প্ৰাচুৰ্যত নহয়, বৰং এনে সত্য উচ্চাৰণ কৰাৰ সাহসত নিহিত, যাক সমাজে বহু সময়ত জানিও স্বীকাৰ কৰিবলৈ সংকোচ বোধ কৰে।”</p></article>
+  <article class="quote-card"><h3>সাহিত্যৰ উদ্দেশ্য</h3><p>“সাহিত্যই মানুহক কেৱল আনৰ জীৱনৰ সৈতে পৰিচিত নকৰে; ই নিজৰ ভিতৰত সুপ্ত হৈ থকা অনুভূতি, দ্বন্দ্ব আৰু প্ৰশ্নসমূহৰ সন্মুখীন হ’বলৈও শিকায়।”</p></article>
+  <article class="quote-card"><h3>লেখকৰ অস্তিত্ব</h3><p>“এজন লেখকৰ পৰিচয় তেওঁৰ ৰচনাৰ সংখ্যাৰে নহয়, বৰং তেওঁৰ শব্দই কিমান গভীৰতাৰে মানুহৰ অনুভৱক স্পৰ্শ কৰিছে আৰু কিমান সততাৰে সময়ৰ সত্যক ধাৰণ কৰিছে, তাৰ দ্বাৰাহে নিৰ্ণীত হয়।”</p></article>
+ </div>
+</div></section>
+
+<section class="soft"><div class="wrap">
+ <div class="section-head"><p class="eyebrow">৬ · মোৰ ব্যক্তিগত জীৱন-দৰ্শন</p><h2>কৰ্মই হওক পৰিচয়</h2></div>
+ <div class="life-box">“মই এনে এখন জীৱন-যাত্ৰাৰ অংশ হ’ব বিচাৰোঁ, য’ত মোৰ পৰিচয় কেৱল মই কোন আছিলোঁ, তাৰ মাজত সীমাবদ্ধ হৈ নাথাকি মই কি সৃষ্টি কৰিলোঁ, কি শিকিলোঁ আৰু আনৰ জীৱনত কি অৰ্থপূৰ্ণ অৱদান আগবঢ়ালোঁ, তাৰ মাজেৰে প্ৰতিফলিত হয়। কাৰণ মানুহৰ জীৱন ক্ষণস্থায়ী হ’লেও তেওঁৰ সৎ কৰ্ম, সৃষ্টিশীল চিন্তা আৰু মানৱীয় মূল্যবোধে সময়ৰ সীমা অতিক্ৰম কৰাৰ সম্ভাৱনা বহন কৰে।”</div>
+</div></section>
+
+<section id="contact"><div class="wrap contact-row">
+ <div><p class="eyebrow">৭ · যোগাযোগ</p><h2 style="font-size:clamp(1.7rem,4vw,2.3rem)">আহক, সংযোগ স্থাপন কৰোঁ।</h2><p>মোৰ লেখা, উপন্যাস অথবা সাহিত্যিক কামৰ বিষয়ে জানিবলৈ Instagram-ত যোগাযোগ কৰিব পাৰে। পাঠকৰ মতামত আৰু পৰামৰ্শকো আদৰণি জনাইছোঁ।</p></div>
+ <a class="button" href="https://www.instagram.com/anuron_0.1/" target="_blank" rel="noopener noreferrer">Instagram @anuron_0.1 ↗</a>
+</div></section>
+</main>
+<footer><div class="wrap foot">
+ <div><strong style="font-size:1.2rem">উৎপল গগৈ</strong><p>শব্দ · অনুভৱ · জীৱন</p><small>© <span id="year">2026</span> উৎপল গগৈ। সকলো অধিকাৰ সংৰক্ষিত।</small></div>
+ <div class="footlinks"><a href="#home">Home</a><a href="#about">পৰিচয়</a><a href="#life">জীৱন-কথা</a><a href="#novels">উপন্যাস</a><a href="#contact">যোগাযোগ</a></div>
+</div></footer>
+<script>
+const menu=document.getElementById('menu');
+const links=document.getElementById('links');
+menu.addEventListener('click',()=>{const opened=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(opened));menu.textContent=opened?'×':'☰';});
+links.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰';}));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
